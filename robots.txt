@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-SITE.pages.dev/sitemap.xml
+Sitemap: https://miccheck-website.pages.dev/sitemap.xml
