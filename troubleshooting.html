@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fix common microphone problems with this simple online microphone troubleshooting guide.">
+  <title>Microphone Troubleshooting - MicCheck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🎙️ MicCheck</a>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a></nav>
+  </header>
+
+  <main class="container info-section">
+    <h1>Microphone Troubleshooting</h1>
+    <p class="muted">Having trouble with your microphone? Try these solutions.</p>
+
+    <section class="card">
+      <h2>1. Microphone permission denied</h2>
+      <p>Click the lock or site settings icon near your browser's address bar. Find Microphone permissions and select Allow. Reload the page.</p>
+
+      <h2>2. No microphone detected</h2>
+      <p>Check that your microphone is connected properly. For Bluetooth microphones, confirm that the device is paired and connected.</p>
+
+      <h2>3. Microphone is not picking up sound</h2>
+      <p>Check that the microphone is not muted. Speak closer to it and verify that the correct input device is selected.</p>
+
+      <h2>4. Another application is using the microphone</h2>
+      <p>Close other apps or browser tabs that may be using your microphone, then try again.</p>
+
+      <h2>5. Microphone test does not start</h2>
+      <p>Use a modern browser and open MicCheck over HTTPS. Your browser must support microphone access.</p>
+
+      <h2>6. Recording playback does not work</h2>
+      <p>Try a supported, updated browser. Check your device volume and make another short recording.</p>
+
+      <p><a href="index.html">Return to the microphone test</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MicCheck</p>
+    <div><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
