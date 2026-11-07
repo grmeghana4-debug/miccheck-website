@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Test your microphone online for free. Check live audio levels, record your voice, and play it back directly in your browser.">
+  <title>MicCheck - Free Online Microphone Test</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">🎙️ MicCheck</a>
+    <nav>
+      <a href="#how-it-works">How it works</a>
+      <a href="troubleshooting.html">Help</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">FREE ONLINE MICROPHONE TEST</span>
+      <h1>Is your microphone <span>working?</span></h1>
+      <p>Test your microphone instantly. Check your audio levels, record your voice, and listen to the result — all in your browser.</p>
+    </section>
+
+    <section class="tester card">
+      <div class="card-heading">
+        <div>
+          <h2>Microphone test</h2>
+          <p>Allow microphone access to get started.</p>
+        </div>
+        <span class="status" id="status">Not started</span>
+      </div>
+
+      <label for="microphone">Select microphone</label>
+      <select id="microphone">
+        <option value="">Default microphone</option>
+      </select>
+
+      <div class="meter-wrap">
+        <div class="meter-label">
+          <span>Live audio level</span>
+          <span id="levelText">0%</span>
+        </div>
+        <div class="meter">
+          <div id="levelBar"></div>
+        </div>
+        <p id="meterMessage">Your audio activity will appear here.</p>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">Start microphone test</button>
+        <button id="stopBtn" class="btn secondary" disabled>Stop test</button>
+      </div>
+
+      <hr>
+
+      <h3>Record your voice</h3>
+      <p class="muted">Record a short sample and play it back to check your sound.</p>
+      <div class="controls">
+        <button id="recordBtn" class="btn primary" disabled>Start recording</button>
+        <button id="playBtn" class="btn secondary" disabled>Play recording</button>
+      </div>
+      <audio id="playback" controls hidden></audio>
+      <p id="recordMessage" class="muted" aria-live="polite"></p>
+    </section>
+
+    <div class="ad-placeholder">
+      Advertisement space
+      <small>Ad space can be configured after your site is approved by an ad network.</small>
+    </div>
+
+    <section id="how-it-works" class="info-section">
+      <h2>How to test your microphone</h2>
+      <div class="steps">
+        <article class="card">
+          <span class="step-number">01</span>
+          <h3>Allow access</h3>
+          <p>Click the test button and allow your browser to use your microphone.</p>
+        </article>
+        <article class="card">
+          <span class="step-number">02</span>
+          <h3>Speak naturally</h3>
+          <p>Talk into your microphone and watch the live audio level meter.</p>
+        </article>
+        <article class="card">
+          <span class="step-number">03</span>
+          <h3>Record and listen</h3>
+          <p>Record a short sample and play it back to hear how you sound.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Is this microphone test free?</summary>
+        <p>Yes. You can test your microphone and record a short sample for free.</p>
+      </details>
+      <details>
+        <summary>Is my voice uploaded?</summary>
+        <p>No. This tool processes microphone audio in your browser. The recording is kept locally for playback and is not uploaded by this page.</p>
+      </details>
+      <details>
+        <summary>Why is my microphone not working?</summary>
+        <p>Check your browser permissions, microphone connection, and device input settings. See our <a href="troubleshooting.html">troubleshooting guide</a>.</p>
+      </details>
+      <details>
+        <summary>Does it work on mobile?</summary>
+        <p>Yes, on supported mobile browsers when microphone permission is allowed.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MicCheck. Free online microphone testing.</p>
+    <div>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="troubleshooting.html">Help</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
