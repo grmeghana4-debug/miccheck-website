@@ -1,7 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://miccheck-website.pages.dev/</loc></url>
-  <url><loc>https://miccheck-website.pages.dev/about.html</loc></url>
-  <url><loc>https://miccheck-website.pages.dev/privacy.html</loc></url>
-  <url><loc>https://miccheck-website.pages.dev/contact.html</loc></url>
-  <url><loc>https://miccheck-website.pages.dev/troubleshooting.html</loc></url>
+  <url>
+    <loc>https://miccheck-website.pages.dev/</loc>
+  </url>
+  <url>
+    <loc>https://miccheck-website.pages.dev/about.html</loc>
+  </url>
+  <url>
+    <loc>https://miccheck-website.pages.dev/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://miccheck-website.pages.dev/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://miccheck-website.pages.dev/troubleshooting.html</loc>
+  </url>
 </urlset>
