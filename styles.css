@@ -266,3 +266,17 @@ summary { cursor: pointer; font-weight: 700; }
   .steps { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
+
+.ad-placeholder {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 24px auto;
+  padding: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-placeholder iframe {
+  max-width: 100%;
+}
